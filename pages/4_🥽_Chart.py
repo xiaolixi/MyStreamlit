@@ -73,7 +73,7 @@ st.subheader("📊 st.area_chart")
 with st.echo():
     st.write("**堆叠区域图 - 显示总量和构成趋势**")
     area_data = data['trend'].set_index('日期')
-    st.area_chart(area_data, use_container_width=True)
+    st.area_chart(area_data, width="stretch")
     
     with st.expander("区域图使用技巧"):
         st.markdown("""
@@ -95,7 +95,7 @@ with st.echo():
                                      value_name='数值')
     
     bar_chart_data = bar_data.pivot(index='类别', columns='指标', values='数值')
-    st.bar_chart(bar_chart_data, use_container_width=True)
+    st.bar_chart(bar_chart_data, width="stretch")
 
 
 # 折线图
@@ -103,7 +103,7 @@ st.subheader("📈 st.line_chart")
 with st.echo():
     st.write("**多系列折线图 - 显示趋势和变化**")
     line_data = data['trend'].set_index('日期')
-    st.line_chart(line_data, use_container_width=True)
+    st.line_chart(line_data, width="stretch")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -124,7 +124,7 @@ with st.echo():
         y='销售额',
         color='产品线',
         size='销售额',  # 点的大小基于销售额
-        use_container_width=True
+        width="stretch"
     )
     
     # 相关性分析

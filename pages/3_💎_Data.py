@@ -31,7 +31,7 @@ df = load_sample_data()
 st.subheader("📋 st.dataframe")
 with st.echo():
     st.write("**交互式DataFrame - 支持排序、搜索**")
-    st.dataframe(df.head(10), use_container_width=True)
+    st.dataframe(df.head(10), width="stretch")
     
     # 显示数据统计信息
     st.write("**数据摘要:**")
@@ -64,7 +64,7 @@ with st.echo():
     edited_df = st.data_editor(
         editable_df,
         num_rows="dynamic",  # 允许动态添加/删除行
-        use_container_width=True,
+        width='stretch',
         hide_index=False,
         column_config={
             "日期": st.column_config.DateColumn("销售日期"),
@@ -74,7 +74,7 @@ with st.echo():
     )
     
     st.write("**编辑后的数据:**")
-    st.dataframe(edited_df, use_container_width=True)
+    st.dataframe(edited_df, width="stretch")
     
     # 显示更改统计
     changes = not edited_df.equals(editable_df)
@@ -136,7 +136,7 @@ with st.echo():
             )
         },
         hide_index=True,
-        use_container_width=True
+        width='stretch'
     )
     
     # 计算总价值
@@ -302,7 +302,7 @@ with st.echo():
         
         st.write("**选中的数据:**")
         if grid_response['selected_rows']:
-            st.dataframe(grid_response['selected_rows'], use_container_width=True)
+            st.dataframe(grid_response['selected_rows'], width="stretch")
             
     except ImportError:
         st.warning("需要安装 streamlit-aggrid: `pip install streamlit-aggrid`")

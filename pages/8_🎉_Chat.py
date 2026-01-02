@@ -50,7 +50,7 @@ with st.echo():
                 '销售额': [12000, 15000, 11000, 18000],
                 '增长率': ['+5%', '+12%', '-3%', '+20%']
             })
-            st.dataframe(sample_data, use_container_width=True)
+            st.dataframe(sample_data, width="stretch")
             
             # 在聊天消息中嵌入图表
             chart_data = pd.DataFrame(
