@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 st.set_page_config(page_title="Streamlit 文本元素演示")
 
 st.title("📝 Streamlit 文本元素演示")

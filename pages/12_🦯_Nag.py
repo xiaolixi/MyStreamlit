@@ -2,7 +2,8 @@ import streamlit as st
 import time
 
 
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 # 应用程序标题
 st.title("🧭 Streamlit 导航与多页面功能演示")
 

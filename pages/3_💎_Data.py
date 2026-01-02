@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from datetime import datetime
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 st.set_page_config(page_title="Streamlit 数据元素演示", layout="wide")
 st.title("📊 Streamlit 数据元素演示")
 

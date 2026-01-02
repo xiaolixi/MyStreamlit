@@ -3,7 +3,8 @@ import numpy as np
 import pandas as pd
 import time
 import random
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 st.set_page_config(page_title="Streamlit 聊天元素演示", page_icon="💬")
 st.title("💬 Streamlit 聊天元素演示")
 

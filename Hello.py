@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
+st.sidebar.markdown("Hi!")
 # 页面配置
 st.set_page_config(
     page_title="Streamlit组件案例库 | 完全指南",
@@ -38,7 +40,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     with st.container(border=True, height=180):
-        st.markdown("### 📖 **基础组件全覆盖**")
+        st.markdown("### 📖 **基础组件**")
 
 
 with col2:

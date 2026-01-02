@@ -1,6 +1,7 @@
 import streamlit as st
 
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 
 st.write("## st.audio ")
 @st.fragment()

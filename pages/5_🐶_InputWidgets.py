@@ -2,7 +2,8 @@ import streamlit as st
 import datetime
 import pandas as pd
 import numpy as np
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 # 为了让st.data_editor有示例数据
 df = pd.DataFrame(np.random.randn(3, 3), columns=["a", "b", "c"])
 

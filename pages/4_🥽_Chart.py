@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import altair as alt
-
+st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+    link="https://streamlit.io/")
 
 st.set_page_config(page_title="Streamlit 图表大全")
 st.title("📈 Streamlit 图表元素完全指南")
