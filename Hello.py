@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-st.logo('new_nag/1.png', icon_image="new_nag/2.png",
+st.logo('new_nag/logo1.png', icon_image="new_nag/logo1.png",
     link="https://streamlit.io/")
 st.sidebar.markdown("Hi!")
 # 页面配置
@@ -13,10 +13,9 @@ st.set_page_config(
 )
 
 # ===================== 主标题区 =====================
+st.image("new_nag/logo1.png" )
 st.markdown("# 📚 **Streamlit组件案例库**")
-st.markdown("### 🚀 一站式学习所有Streamlit组件的完整解决方案")
-
-st.divider()
+st.markdown("### 🚀 一站式学习所有Streamlit组件的完整解决方案") 
 
 # ===================== 项目介绍卡片 =====================
 with st.container(border=True):
@@ -30,7 +29,6 @@ with st.container(border=True):
     - 👶 **Streamlit新手**：从零开始系统学习
     - 👶 https://myapp-lixi.streamlit.app/
     """)
-
 # ===================== 核心特点展示 =====================
 st.divider()
 
@@ -40,17 +38,17 @@ st.markdown("## ✨ 平台核心特点")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    with st.container(border=True, height=180):
+    with st.container(border=True):
         st.markdown("### 📖 **基础组件**")
 
 
 with col2:
-    with st.container(border=True, height=180):
+    with st.container(border=True):
         st.markdown("### 🎮 **即看即用**")
 
 
 with col3:
-    with st.container(border=True, height=180):
+    with st.container(border=True):
         st.markdown("### 💡 **实用导向**")
 
 
