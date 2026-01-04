@@ -28,6 +28,7 @@ with st.container(border=True):
     
     ### 🎯 适合谁使用？
     - 👶 **Streamlit新手**：从零开始系统学习
+    - 👶 https://myapp-lixi.streamlit.app/
     """)
 
 # ===================== 核心特点展示 =====================
@@ -78,6 +79,15 @@ st.divider()
 
 st.markdown("## 🚀 开始探索")
 st.info("🚀 **新手快速入门**")
+st.info("""
+        - streamlit每次点击之后都会重新执行一遍脚本，这是它的一个出乎意料但官网却不怎么着重说明的一个特性
+        - 因为上面的这个特性，streamlit提供了一个session_state来存储状态，它实际上就是一个dict
+        - 为了避免脚本全都重新执行，可以使用@st.fragment()注解方法，避免全部更新，
+        - streamlit还提供了缓存的注解，避免重新执行脚本加载的耗时
+        - 使用 `with st.echo()`可以打印脚本内容，还可以执行脚本。
+        - streamlit有两种方式实现多页的应用程序。1是使用streamlit约定的目录形式，但是它没有缩进。2是使用st.navigation组件手动构建组件，这个有缩进。
+        - stremlit编程最大的不适应，或者说难点，就是上面streamlit会重新执行脚本
 
+ """)
 # ===================== 底部信息 =====================
 st.divider()
